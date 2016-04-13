@@ -10,7 +10,7 @@
  */
 
 /* CSS RESET */
-$import '_reset';
+@import 'reset';
 
 $sec-bg: #e6eaed;
 
@@ -119,7 +119,8 @@ header {
 		display: block;
 		width: 40px; height: 24px;
 		border-right: 1px solid $sec-box-header-divider;
-		background: url('../images/logo.png') no-repeat 50% 50%;
+		//background: url('../images/logo.png') no-repeat 50% 50%;
+		background: url('../../framework/admin/images/logo_small.png') no-repeat 50% 50%;
 	}
 }
 
@@ -175,8 +176,8 @@ input {
 		width: 100%;
 		padding: 6px;
 		border: 1px solid $sec-input-border;
-		.gradient-input($sec-input-bg, $sec-white);
-		.rounded(5px);
+		@include gradient-input($sec-input-bg, $sec-white);
+		@include rounded(5px);
 
 		&:focus {
 			border-color: $sec-input-border-dark $sec-input-border-mid $sec-input-border-mid $sec-input-border-mid;
@@ -217,8 +218,8 @@ input {
 
 	&:hover {
 		border-color: $sec-action-primary-dark;
-		.gradient($sec-action-primary-light-on, $sec-action-primary-mid-on);
-		.shadow($sec-input-border, 0, 0, 5px, 0)
+		@include gradient($sec-action-primary-light-on, $sec-action-primary-mid-on);
+		@include shadow($sec-input-border, 0, 0, 5px, 0)
 	}
 }
 
@@ -242,7 +243,7 @@ input {
 /* LOST PASSWORD VARIANT */
 
 #MemberLoginForm_LostPasswordForm {
-	@include field {
+	.field {
 		width: 100%;
 	}
 	input {

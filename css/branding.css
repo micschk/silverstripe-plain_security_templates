@@ -7,4 +7,8 @@
  *
  * WTFPL
  * http://en.wikipedia.org/wiki/WTFPL
- */.cms-logo a{background-image:url('../images/logo.png')}
+ */
+/* line 12, ../scss/branding.scss */
+.cms-logo a {
+  background-image: url("../images/logo.png");
+}

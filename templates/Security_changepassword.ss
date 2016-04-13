@@ -7,14 +7,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="<% if MetaDescription %>$MetaDescription<% else %>$Content.FirstParagraph<% end_if %>">
 	$MetaTags(false)
-	<link rel="stylesheet" href="{$BaseURL}securitytemplates/css/login.css" type="text/css" />
+	<link rel="stylesheet" href="{$BaseURL}security_templates/css/login.css" type="text/css" />
 	<link rel="shortcut icon" href="{$BaseURL}favicon.ico" />
 </head>
 <body class="$ClassName">
 
 <div id="top">
 	<header>
-		<h1><%t Security.CHANGEPASSWORDHEADER "Choose a New Password" %><span><!-- for logo --></span></h1>
+		<h1>Choose a New Password<span><!-- for logo --></span></h1>
 	</header>
 	<% if $Content %>
 	<div class="content">

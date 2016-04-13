@@ -7,4 +7,280 @@
  *
  * WTFPL
  * http://en.wikipedia.org/wiki/WTFPL
- */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}img{-ms-interpolation-mode:bicubic}.border-box{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{background:#e6eaed;font:62.5% arial,sans-serif}#top{width:540px;margin:50px auto 0;background:#b0bec7;background:-webkit-linear-gradient(top,#b0bec7 0,#b0bec7 60%,#90a5b3 100%);background:linear-gradient(to bottom,#b0bec7 0,#b0bec7 60%,#90a5b3 100%);-moz-box-shadow:0 2px 2px 0 #636f76;-webkit-box-shadow:0 2px 2px 0 #636f76;box-shadow:0 2px 2px 0 #636f76}header{position:relative;width:490px;height:40px;padding:0 0 0 50px;font-weight:bold;font-size:140%;line-height:40px;color:#fff;border-bottom:1px solid #728d9e;background:#001220;background:-webkit-linear-gradient(top,#002e4f 0,#001220 100%);background:linear-gradient(to bottom,#002e4f 0,#001220 100%)}header span{position:absolute;left:0;top:8px;display:block;width:40px;height:24px;border-right:1px solid #13435e;background:url('../images/logo.png') no-repeat 50% 50%}form,.content{padding:20px;font-size:120%}.field.text{float:left;width:240px;margin:0 0 10px 0}.field.text label{font-weight:bold;text-shadow:1px 1px 1px #fff}.field.password{float:right}.field#NewPassword1{float:left;clear:left}.field.checkbox{clear:both;width:100%;margin:0 0 15px 0}label{display:inline-block;margin:0 0 2px 2px;color:#444}label.right{margin-left:5px}input{font-size:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input.text{width:100%;padding:6px;border:1px solid #b3b3b3;background:#fff;background:-webkit-linear-gradient(top,#eaeaea 0,#fff 10%,#fff 100%);background:linear-gradient(to bottom,#eaeaea 0,#fff 10%,#fff 100%);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}input.text:focus{border-color:#808080 #9a9a9a #9a9a9a #9a9a9a;transition:border .2s ease-in 0s}input.checkbox{margin:0}.Actions{overflow:hidden;width:100%}.Actions p{float:right;width:240px;margin:10px 0 0;text-align:right}.action{float:left;font-size:100%;margin:5px 0;padding:5px 15px;color:#fff;border-width:1px;border-style:solid;border-color:#1f9433 #1f9433 #166a24 #1f9433;cursor:pointer;background:#1f9433;background:-webkit-linear-gradient(top,#93be42 0,#1f9433 100%);background:linear-gradient(to bottom,#93be42 0,#1f9433 100%);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.action:hover{border-color:#166a24;background:#23a93a;background:-webkit-linear-gradient(top,#a4ca3a 0,#23a93a 100%);background:linear-gradient(to bottom,#a4ca3a 0,#23a93a 100%);-moz-box-shadow:0 0 5px 0 #b3b3b3;-webkit-box-shadow:0 0 5px 0 #b3b3b3;box-shadow:0 0 5px 0 #b3b3b3}.message{font-weight:bold;margin:0 0 1em;padding:10px;background:#f2dede;color:#b94a48;border:1px solid #eed3d7;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.message.good{background:#1f9433;color:#fff;border:1px solid #166a24}#MemberLoginForm_LostPasswordForm .field{width:100%}#MemberLoginForm_LostPasswordForm input.text{width:100%}#ChangePasswordForm_ChangePasswordForm{padding-top:0}a{text-decoration:underline}a:link,a:visited{color:#444}a:hover,a:active{color:#000}
+ */
+/* CSS RESET */
+/* line 5, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 26, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 48, ../scss/_reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* SILVERSTRIPE SECURITY TEMPLATES
+---------------------------------------------------------------------------------- */
+/* line 95, ../scss/login.scss */
+body {
+  background: #e6eaed;
+  font: 62.5% arial,sans-serif;
+}
+
+/* line 100, ../scss/login.scss */
+#top {
+  width: 540px;
+  margin: 50px auto 0;
+  background: #b0bec7;
+  background: -webkit-linear-gradient(top, #b0bec7 0%, #b0bec7 60%, #90a5b3 100%);
+  background: linear-gradient(to bottom, #b0bec7 0%, #b0bec7 60%, #90a5b3 100%);
+  -moz-box-shadow: 0 2px 2px 0 #636f76;
+  -webkit-box-shadow: 0 2px 2px 0 #636f76;
+  box-shadow: 0 2px 2px 0 #636f76;
+}
+
+/* line 107, ../scss/login.scss */
+header {
+  position: relative;
+  width: 490px;
+  height: 40px;
+  padding: 0 0 0 50px;
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 40px;
+  color: #fff;
+  border-bottom: 1px solid #728d9e;
+  background: #001220;
+  background: -webkit-linear-gradient(top, #002e4f 0%, #001220 100%);
+  background: linear-gradient(to bottom, #002e4f 0%, #001220 100%);
+}
+/* line 117, ../scss/login.scss */
+header span {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  display: block;
+  width: 40px;
+  height: 24px;
+  border-right: 1px solid #13435e;
+  background: url("../../framework/admin/images/logo_small.png") no-repeat 50% 50%;
+}
+
+/* line 127, ../scss/login.scss */
+form, .content {
+  padding: 20px;
+  font-size: 120%;
+}
+
+/* STYLES FOR THE DEFAULT FIELD DIVS THAT SILVERSTRIPE CREATES */
+/* line 135, ../scss/login.scss */
+.field.text {
+  float: left;
+  width: 240px;
+  margin: 0 0 10px 0;
+}
+/* line 140, ../scss/login.scss */
+.field.text label {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+}
+/* line 145, ../scss/login.scss */
+.field.password {
+  float: right;
+}
+/* line 148, ../scss/login.scss */
+.field#NewPassword1 {
+  float: left;
+  clear: left;
+}
+/* line 152, ../scss/login.scss */
+.field.checkbox {
+  clear: both;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+/* LABELS 'N' INPUTS */
+/* line 161, ../scss/login.scss */
+label {
+  display: inline-block;
+  margin: 0 0 2px 2px;
+  color: #444;
+}
+/* line 166, ../scss/login.scss */
+label.right {
+  margin-left: 5px;
+}
+
+/* line 171, ../scss/login.scss */
+input {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 175, ../scss/login.scss */
+input.text {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #b3b3b3;
+  background: #fff;
+  background: -webkit-linear-gradient(top, #eaeaea 0%, #fff 10%, #fff 100%);
+  background: linear-gradient(to bottom, #eaeaea 0%, #fff 10%, #fff 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 182, ../scss/login.scss */
+input.text:focus {
+  border-color: #808080 #9a9a9a #9a9a9a #9a9a9a;
+  transition: border 0.2s ease-in 0s;
+}
+/* line 188, ../scss/login.scss */
+input.checkbox {
+  margin: 0;
+}
+
+/* BUTTONS! */
+/* line 195, ../scss/login.scss */
+.Actions {
+  overflow: hidden;
+  width: 100%;
+}
+/* line 199, ../scss/login.scss */
+.Actions p {
+  float: right;
+  width: 240px;
+  margin: 10px 0 0;
+  text-align: right;
+}
+
+/* line 207, ../scss/login.scss */
+.action {
+  float: left;
+  font-size: 100%;
+  margin: 5px 0;
+  padding: 5px 15px;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1F9433 #1F9433 #166A24 #1F9433;
+  cursor: pointer;
+  background: #1F9433;
+  background: -webkit-linear-gradient(top, #93BE42 0%, #1F9433 100%);
+  background: linear-gradient(to bottom, #93BE42 0%, #1F9433 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 219, ../scss/login.scss */
+.action:hover {
+  border-color: #166A24;
+  background: #23a93a;
+  background: -webkit-linear-gradient(top, #a4ca3a 0%, #23a93a 100%);
+  background: linear-gradient(to bottom, #a4ca3a 0%, #23a93a 100%);
+  -moz-box-shadow: 0 0 5px 0 #b3b3b3;
+  -webkit-box-shadow: 0 0 5px 0 #b3b3b3;
+  box-shadow: 0 0 5px 0 #b3b3b3;
+}
+
+/* CONFIRMATION MESSAGES */
+/* line 228, ../scss/login.scss */
+.message {
+  font-weight: bold;
+  margin: 0 0 1em;
+  padding: 10px;
+  background: #F2DEDE;
+  color: #B94A48;
+  border: 1px solid #EED3D7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 236, ../scss/login.scss */
+.message.good {
+  background: #1F9433;
+  color: #fff;
+  border: 1px solid #166A24;
+}
+
+/* LOST PASSWORD VARIANT */
+/* line 246, ../scss/login.scss */
+#MemberLoginForm_LostPasswordForm .field {
+  width: 100%;
+}
+/* line 250, ../scss/login.scss */
+#MemberLoginForm_LostPasswordForm input.text {
+  width: 100%;
+}
+
+/* CHOOSE NEW PASSWORD */
+/* line 258, ../scss/login.scss */
+#ChangePasswordForm_ChangePasswordForm {
+  padding-top: 0;
+}
+
+/* ANCHORS */
+/* line 264, ../scss/login.scss */
+a {
+  text-decoration: underline;
+}
+/* line 266, ../scss/login.scss */
+a:link, a:visited {
+  color: #444;
+}
+/* line 267, ../scss/login.scss */
+a:hover, a:active {
+  color: #000;
+}

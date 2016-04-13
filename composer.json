@@ -1,8 +1,8 @@
 {
-	"name": "feejin/silverstripe-securitytemplates",
-	"description": "Custom security templates to mirror CMS",
+	"name": "micschk/silverstripe-plain_security_templates",
+	"description": "Templates for security pages to mirror CMS styling (login etc)",
 	"type": "silverstripe-module",
-	"homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates",
+	"homepage": "https://github.com/micschk/silverstripe-plain_security_templates",
 	"keywords": ["silverstripe", "security", "templates", "theme"],
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -13,15 +13,19 @@
 		{
 			"name": "Loz Calver",
 			"email": "lozcalver@bigfork.co.uk"
+		},
+		{
+			"name": "Restruct web & apps",
+			"email": "dev@restruct.nl"
 		}
 	],
 	"support": {
-		"issues": "https://github.com/feejin/Silverstripe-SecurityTemplates/issues"
+		"issues": "https://github.com/micschk/silverstripe-plain_security_templates/issues"
 	},
 	"require": {
-		"silverstripe/framework": ">=3.0"
+		"silverstripe/framework": "~3.0"
 	},
 	"extra": {
-		"installer-name": "securitytemplates"
+		"installer-name": "security_templates"
 	}
 }

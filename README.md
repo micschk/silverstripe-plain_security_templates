@@ -2,18 +2,19 @@
 
 Standalone templates for SilverStripe 3.x login and password reset pages, designed to mirror the design of the CMS.
 
-By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/).
+**This fork just swaps the Bigfork logo to a plain SilverStripe one and deactivates the admin branding.**
+
+By Colin Richardson & Loz Calver - [Bigfork Ltd](http://www.bigfork.co.uk/) (original module).
+This fork by [Restruct web & apps](http://www.restruct.nl/)
 
 ##Composer Installation:##
 
-Add this to your composer.json requirements: `"feejin/silverstripe-securitytemplates": "^1.0"`
+Add this to your composer.json requirements: `"micschk/silverstripe-plain_security_templates": "dev-master"`
 
 ##Manual Installation##
 
-Download and unzip, rename folder to securitytemplates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build and you're done.
+Download and unzip, rename folder to security__templates and drop it into your SilverStripe root directory, run http://yoursite.url/dev/build and you're done.
 
 ##Customising##
 
-* You can change colours with SCSS variables in /scss/login.scss. 
-* Replace logo.png in /images/ with your own if you wish. Max size is 24 x 24.
-* Replacing the logo will also change the admin logo, comment out the "LeftAndMain::require" part of _config.php if you don't want this to happen
+* You can change colours with SCSS variables in /less/login.scss. Yeah!
